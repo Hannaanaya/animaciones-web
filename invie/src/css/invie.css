@@ -1,0 +1,351 @@
+/*  {
+  ancho: tamaño;
+  altura: tamaño;
+  relleno: 10px;
+  padding-top: 10px;
+  padding-right: 13px;
+  padding-left: 15px;
+  fondo acolchado: 5px;
+  relleno: 10px 13px 5px 15px;
+  margen: 10px;
+  margen superior: 10px;
+  margen derecho: 13px;
+  margen izquierdo: 15px;
+  margen inferior: 5px;
+  margen: 10px 13px 5px 15px;
+  borde: 2px rojo sólido;
+} */ 
+
+body {
+  font-family : 'Allerta' , sans-serif;
+  margin : 0 ;
+}
+
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px  20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table ,  td ,  th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input ,  textarea {
+  outline: 0;
+}
+
+input:focus ,  textarea:focus {
+  background: lightgray;
+}
+
+.contenedor {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.background {
+  background-image: url( '../images/background.png' );
+  background-size: cover;
+}
+
+.portada .background .is-animated {
+  background-image: url( '../images/team-platzi-azul.jpg' );
+  background-repeat: no-repeat;
+  animation: background 15s linear infinite alternate;
+}
+
+@keyframes background {
+  0% {
+    background-size: 200%;
+    background-position: center;
+  }
+  20% {
+    background-position: top right;
+  }
+
+  40% {
+    background-position: center;
+    background-size: 100%;
+  }
+  60% {
+    background-position: top left;
+  }
+
+  80% {
+    background-position: left -100px;
+  }
+  100% {
+    background-position: right -100px;
+    background-size: 200%;
+  }
+}
+
+.button {
+  border-radius: 12px;
+  border: none;
+  color : white;
+  padding: 7px  12px;
+  cursor : pointer;
+  text-decoration: none;
+  background-size: 18px;
+  background: #fd324e;
+  background: linear-gradient( left, #fe344e , #ff7250 );
+
+/*   Enlace permanente: utilícelo para editar y compartir este degradado: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+  /* fondo: rgb (243,197,189); / * Navegadores antiguos  */
+  /* fondo: -moz-linear-gradient (top, rgba (243,197,189,1) 0%, rgba (232,108,87,1) 50%, rgba (234,40,3,1) 51%, rgba (255,102, 0,1) 75%, rgba (199,34,0,1) 100%); */
+  
+  /* fondo: -webkit-linear-gradient (top, rgba (243,197,189,1) 0%, rgba (232,108,87,1) 50%, rgba (234,40,3,1) 51%, rgba (255,102,0, 1) 75%, rgba (199,34,0,1) 100%);
+  fondo: gradiente lineal (hacia abajo, rgba (243,197,189,1) 0%, rgba (232,108,87,1) 50%, rgba (234,40,3,1) 51%, rgba (255,102,0,1) 75%, rgba (199,34,0,1) 100%);
+  filtro: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# f3c5bd', endColorstr = '# c72200', GradientType = 0); */
+
+}
+
+.titulo {
+  font-family: 'Montserrat' , sans-serif;
+  background-size: 70px;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+.titulo  span {
+  text-decoration: underline;
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top : 0;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom : 20px;
+}
+
+.guitarras {
+  color : #1F313C;
+  margin-bottom: 60px;
+}
+
+.guitarras  h2 {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 35px;
+}
+
+
+.portada {
+  color : white;
+  padding: 20px;
+  height: 500px;
+}
+
+.botón .portada {
+  margin-bottom: 70px;
+}
+
+
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.menu  li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu  li :before {
+  content: '∘';
+  font-size: 50px;
+  line-height: 20px;
+  color : white;
+}
+
+.menú  a {
+  color : white;
+  text-decoration: none;
+}
+
+.logotipo {
+  display: inline-block;
+  margin-left: 0 ;
+}
+
+
+.guitarra {
+  margin: 10px  0  40px;
+  padding: 10px  2em;
+  /* desbordamiento: oculto; */
+  border: 1px solid #1F313C;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  min-height: 250px;
+  transition: .3s;
+  position: relative;
+}
+
+.guitarra:hover {
+  /* caja-sombra: xy% color; */
+  box-shadow: 10px  10px  0  #ff3149 ;
+}
+.guitarra-name {
+  font-size: 3em;
+  margin: 0  0  .2em;
+  padding-bottom: .2em;
+  border-bottom : 2px precipitate #1e313d ;
+}
+/*.guitarra:nth-of-type(2) {*/
+/*.guitarra:nth-of-type(odd) {*/
+.guitarra:nth-of-type(par):hover {
+  box-shadow: -10px 10px  0 black;
+}
+.guitarra:nth-of-type(par) {
+  /*fondo: verde;*/
+  justify-content: flex-end;
+}
+.guitarra:nth-of-type(par).guitarra-image {
+  left: 0 ;
+  right: initial;
+}
+.guitarra-image {
+  position: absolute;
+  right: 0 ;
+  bottom: 0 ;
+}
+
+.guitarra  ol {
+  padding: 0 ;
+  list-style: none;
+  counter-reset: features;
+}
+.guitarra  li :before {
+  
+  counter-increment: features;
+  content: contador (features) "." ;
+}
+
+/*.guitarra.b {
+  altura: 190px;
+} */
+
+
+/*.derecha {
+  flotar derecho;
+  posición: relativa;
+  superior: -127px;
+}
+.izquierda {
+  flotador izquierdo;
+  posición: relativa;
+} */
+
+.contenedor-guitarra-a {
+  padding-left : 20px ;
+}
+.contenedor-guitarra-b {
+  margin-left: 370px ;
+  position: relative;
+  bottom: 90px ;
+
+}
+
+.encabezado {
+  position: relative;
+}
+
+
+.pie de página {
+  fondo : # 273b47 ;
+  relleno : 50 px  10 px ;
+}
+
+.contacto {
+  display: flex;
+  width: 300px ;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacto  img {
+  display: block;
+}
+
+.contacto  strong {
+  display: block;
+}
+
+.contacto  a {
+  color : white;
+  text-decoration: none;
+  margin: 10px  10px  10px  0 ;
+}
+
+
+.footer contenedor {
+  pantalla : flex;
+  justificar-contenido : espacio-entre;
+}
+
+
+.formulario {
+  pantalla : flex;
+  ancho : 400 px ;
+  color : blanco;
+}
+
+
+.col1 , .col2 {
+  display: flex;
+  flex-direction : column;
+}
+
+.col1 {
+  margin-right: 15px ;
+}
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button {
+  margin-top: 15px ;
+}
+
+.intereses  label {
+  font-size: 12px ;
+}
+
+.Form  label,
+.sexo ,
+.intereses {
+  margin-bottom: 10px;
+}
+
+
+.sexo {
+  margin-top: 10px;
+}
+
+
+.table {
+  margin: 50px  0;
+}
